@@ -3,7 +3,7 @@ import React from 'react'
 function founderswipe() {
   return (
     <div>
-      Hello
+      Hello World
     </div>
   )
 }
