@@ -1,4 +1,3 @@
-// src/investor_component/InvestorProfileCreation.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +10,7 @@ function InvestorProfileCreation() {
     industryFocus: '',
     investmentExperience: '',
     profilePicture: null,
+    additionalDetails: ''
   });
   const navigate = useNavigate();
 
@@ -36,9 +36,9 @@ function InvestorProfileCreation() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white p-6">
-      <div className="relative z-10 w-full max-w-lg p-8 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-3xl shadow-lg">
+      <div className="relative z-10 w-full max-w-2xl p-8 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-3xl shadow-xl">
         <h1 className="text-4xl font-bold mb-6 text-center">Create Your Investor Profile</h1>
-
+        
         <div className="mb-6">
           <div className="flex justify-between text-xs font-medium text-gray-300">
             <span className={`flex-1 text-center ${currentStep === 1 ? 'text-white' : ''}`}>Personal Info</span>
@@ -50,7 +50,6 @@ function InvestorProfileCreation() {
           </div>
         </div>
 
-        {/* Step 1: Personal Information */}
         {currentStep === 1 && (
           <div className="space-y-6">
             <div>
@@ -94,7 +93,6 @@ function InvestorProfileCreation() {
           </div>
         )}
 
-        {/* Step 2: Investment Details */}
         {currentStep === 2 && (
           <div className="space-y-6">
             <div>
@@ -153,13 +151,12 @@ function InvestorProfileCreation() {
           </div>
         )}
 
-        {/* Step 3: Additional Information */}
         {currentStep === 3 && (
           <div className="space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-300">Additional Details</label>
               <textarea
-                value={formData.additionalDetails || ''}
+                value={formData.additionalDetails}
                 onChange={(e) => setFormData({ ...formData, additionalDetails: e.target.value })}
                 className="w-full p-4 bg-gray-700 rounded-lg text-gray-300 border border-gray-600 focus:ring-2 focus:ring-green-500"
                 placeholder="Any additional details you want to share?"

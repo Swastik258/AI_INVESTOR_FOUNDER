@@ -6,7 +6,7 @@ function WelcomeScreen() {
   const navigate = useNavigate();
 
   const handleProceed = () => {
-    navigate('/founderswipe'); // Redirect to the swiping screen
+    navigate(''); // Redirect to the swiping screen
   };
 
   return (

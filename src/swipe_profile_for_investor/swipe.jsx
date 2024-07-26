@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 const sampleProfiles = [
   { id: 1, name: 'Alice', role: 'Founder', location: 'New York', industryFocus: 'Tech' },
   { id: 2, name: 'Bob', role: 'Investor', location: 'San Francisco', industryFocus: 'Healthcare' },
+  { id: 3, name: 'JHON', role: 'Founder', location: 'New York', industryFocus: 'Tech' },
+
   // Add more sample profiles
 ];
 
