@@ -13,7 +13,7 @@ function Home() {
       {/* Main Content */}
       <div className="z-10 text-center px-4 max-w-screen-md mx-auto">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 lg:mb-6 leading-tight transform hover:scale-105 transition-transform duration-500">
-           Ideal Investor Match
+            Investor Match
         </h1>
         <p className="text-sm md:text-base lg:text-lg mb-8 lg:mb-12 max-w-2xl mx-auto leading-relaxed">
           Connect with investors perfectly aligned with your vision. Our platform leverages cutting-edge AI to find the ideal partners to fuel your business growth.
